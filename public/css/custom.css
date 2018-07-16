@@ -1,0 +1,438 @@
+body{
+	padding:0;
+	margin:0;
+	border:0;
+	box-sizing: border-box;
+	background-color: #f3e9e7;
+}
+
+header{
+	height:60px;
+	width:100%;
+	position: fixed;
+	z-index: 999;
+	background-color: white;
+	border-bottom: 2px solid black;
+	top:0;
+}
+
+header > #home{
+	float:left;
+	height: 100%;
+	width:10%;
+	background-color: #132ed6;
+}
+
+header > #home > #get_home{
+	color:white;
+	width:100%;
+	height: 100%;
+	text-align: center;
+	line-height: 60px;
+	font-size:30px;
+}
+
+header > #home > #get_home:hover{
+	cursor:pointer;
+	font-size: 35px;
+}
+
+header > #content, header > #content_l{
+	height: 100%;
+	width:70%;
+	line-height: 60px;	
+	float:left;
+	font-size: 30px;
+	background-color: #f3e9e7;
+}
+
+header > #loggedin{
+	width:20%;
+	height: 100%;
+	float:left;
+	color:white;
+	text-align: center;
+	line-height: 60px;
+	background-color: #1045d3;
+	font-size: 20px;
+}
+
+header > #signup, header > #signin{
+	width:10%;
+	height: 100%;
+	float: left;
+}
+
+header > #signup{
+	background-color: #1045d3;
+	color:white;
+	font-size: 150%;
+	text-align: center;
+	line-height: 60px;
+}
+
+header > #signin{
+	background-color: #3d6ef3;
+	color:white;
+	font-size: 150%;
+	text-align: center;
+	line-height: 60px;
+}
+
+header > #signin:hover,
+header > #signup:hover{
+	font-size: 170%;
+	cursor:pointer;
+}
+
+#main{
+	margin-top:60px; 
+}
+
+#main > .content{
+	width:100%;
+}
+
+.white{
+	background-color: #becbed;
+}
+
+.content_1 section{
+	margin-top: 100px;
+	width:40%;
+	float:left;
+	margin-left: 100px;
+}
+
+.content_1 section img{
+	margin-top: 60px;
+}
+
+.content_2 section img{
+	margin-top: 50px;
+	margin-left: 80px;
+}
+
+.orange{
+	background-color:#A6DFF8;
+}
+
+.content_3 section img{
+	width:80%;
+}
+
+.green{
+	background-color: #C1CBCF;
+}
+
+
+#signup input,#signin input{
+ 	width:60%;
+ 	float:left;
+ 	height:40px;
+ 	border-radius: 4px;
+ 	margin-top: 10px;
+ 	font-size: 20px;
+}
+
+#signup input:focus{
+	border: 2px solid #1045d3;
+}
+#signin input:focus{
+	border: 2px solid #3d6ef3;
+}
+
+#signup input[type=submit]{
+	width:61.5%;
+	margin-top: 15px;
+	border: 0;
+	color:white;
+	background-color: #1045d3;
+}
+
+#signin input[type=submit], #upload input[type=file],#upload input[type=submit]{
+	width:61.5%;
+	margin-top: 15px;
+	border: 0;
+	color:white;
+	background-color: #3d6ef3;
+}
+
+#signup input[type=submit]:hover, 
+#signin input[type=submit]:hover{
+	cursor:pointer;
+	font-size: 22px;
+}
+
+footer{
+	background-color: #313632;
+	color:white;
+}
+
+#main_dashboard{
+	width:100%;
+	margin-top: 100px;
+}
+
+#loggedin:hover #items{
+	display:block;
+}
+
+#items{
+	width:100%;
+	min-height: 30px;
+	background-color: #3d6ef3;
+	display:none;
+}
+
+
+#items .item a{
+	color:inherit;
+	font-size: 15px;
+	position: relative;
+	top:-15px;
+	text-decoration: none;
+	width:100%;
+	height: 100%;
+}
+
+#items .item:hover{
+	background-color:#1045d3; 
+}
+
+#items .item{
+	width:100%;
+	float:left;
+	height:30px;
+	border-bottom: 1px solid white;
+	background-color: #3d6ef3;
+}
+
+.things{
+	width:50%;
+	margin:0 auto;
+}
+
+.things .elements{
+	width:100%;
+	height:50px;
+	float: left;
+}
+
+.things .elements p{
+	font-size: 20px;
+	position: relative;
+	top:-5px;
+	margin-left: 15px;
+}
+
+.things .elements .image{
+	width:100%;
+	height: 120px;
+}
+
+#projects{
+	margin:0 auto;
+	width: 80%;
+	
+}
+
+#projects h1{
+	width: 100%;
+	text-align: center;
+	height: 50px;
+}
+
+.project_items{
+	width:30%;
+	margin: 20px 0 20px 28px;
+	height: 450px;
+	background-color: white;
+	float: left;
+	border-radius: 5px;
+}
+
+.project_items .project_image{
+	width:151px;
+	height: 151px;
+	margin: 10px auto;
+	background-color: black;
+	border-radius: 100%;
+	border: 1px solid black;
+}
+
+.project_image img{
+	height:150px;
+	width: 150px;
+	border-radius: 100%;
+}
+
+.info{
+	width: 100%;
+	height: 40px;
+	margin-left: 10px;
+}
+
+#mainarea{
+	position: fixed;
+	margin-top:60px;	
+	width:100%;
+	height: 100%;
+}
+
+#mainarea #left{
+	position: fixed;
+	width: 20%;
+	height: 75%;
+	border-right: 2px solid black;
+	overflow-y: scroll;
+	overflow-x: scroll;
+	list-style: none;
+}
+
+#mainarea #right{
+	right: 0;
+	position: fixed;
+	width: 80%;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+#mainarea .down{
+	left:0;
+	bottom:0;
+	position: fixed;
+	border-right: 2px solid black;
+	border-top: 2px solid black;
+	height: 20%;
+	width: 20%;
+	font-family: 'Times New Roman';
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#mainarea #left ul{
+	list-style: none;
+	margin:3px 0 3px -10px;
+	font-size: 15px;
+}
+
+#mainarea #left ul li.files{
+	font-size: 14px;
+}
+
+#mainarea #left li{
+	margin-left: 20px;
+	color:black;
+	font-size: 0.9em;
+}
+
+.closed:hover{
+	cursor:pointer;
+	color:blue;
+}
+
+.files:hover{
+	cursor:pointer;
+	color:red!important;
+}
+
+#operations{
+	width:80%;
+	margin:10px auto 0 auto;
+}
+
+#operations .save{
+	float:right;
+	background-color:blue;
+	height:40px;
+	width: 150px;
+	color:white;
+	font-size: 1.1em;
+}
+
+#middle{
+	border-right:2px solid black;
+	border-top:2px solid black;
+	position: fixed;
+	width:20%;
+	height:5%;
+	float: left;	
+}
+
+#middle div{
+	background-color: blue;
+	height: 35px;
+	float: left;
+	margin:0;
+	padding:0;
+	width:32.8%;
+	color:white;
+	border-right:1px solid white;
+	text-align: center;
+	line-height: 35px;
+}
+
+#middle div:hover{
+	cursor:pointer;
+	font-size: 1.1em;
+}
+
+#dialog{
+	position: fixed;
+	z-index: 999;
+	border-radius:8px;
+	background-color: white;
+	height: 300px;
+	width: 600px;
+	display:none;
+}
+
+#dialog #title{
+	width:100%;
+	height:45px;
+	text-align: center;
+	line-height: 45px;
+	font-size: 1.1em;
+	border-bottom: 2px solid black;
+}
+
+#dialog #name{
+	width: 100%;
+	height: 30px;
+}
+
+#dialog #files{
+	width: 100%;
+	height:225px;
+	overflow-y: scroll;
+}
+
+#exit{
+	float:right;
+	width: 45px;
+	height:45px;
+	background-color: red;
+	color:white;
+	line-height: 45px;
+	text-align: center;
+}
+
+#exit:hover{
+	cursor:pointer;
+	font-size: 1.3em;
+}
+
+.folder_place{
+	margin: 3px 0 3px 0;
+}
+
+.folder_place:hover, 
+.upload_place:hover{
+	font-size: 1.1em;
+	cursor:pointer;
+}
+
+.down.dragover{
+	font-size:1.6em!important; 
+}
